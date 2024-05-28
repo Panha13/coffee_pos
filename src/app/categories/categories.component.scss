@@ -1,0 +1,18 @@
+.category-list {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+.category-list li {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}

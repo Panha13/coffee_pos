@@ -1,0 +1,62 @@
+.logo {
+  cursor: pointer;
+  margin: 0;
+  font-weight: bold;
+}
+.input-container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 15px 40px 15px 15px; /* Adjust the padding to make space for the icon */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888; /* Adjust icon color as needed */
+}
+
+.icon-tag {
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon-tag img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.profile {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  gap: 12px; /* Adjust height as needed */
+}
+.profile p {
+  font-weight: 500;
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+  cursor: pointer;
+}
