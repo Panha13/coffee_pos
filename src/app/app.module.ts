@@ -21,6 +21,9 @@ import { provideHttpClient } from '@angular/common/http';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzFlexModule } from 'ng-zorro-antd/flex';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { InvoiceComponent } from './invoice/invoice.component';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { OrderCardComponent } from './order-card/order-card.component';
 
 registerLocaleData(en);
 
@@ -31,6 +34,8 @@ registerLocaleData(en);
     NavbarComponent,
     CategoriesComponent,
     ProductCardComponent,
+    InvoiceComponent,
+    OrderCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ registerLocaleData(en);
     NzGridModule,
     NzFlexModule,
     NzSelectModule,
+    NzButtonModule,
   ],
   providers: [
     provideClientHydration(),

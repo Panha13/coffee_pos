@@ -16,9 +16,13 @@
   background-color: #f9f8fb;
   border-radius: 40px 0 0 40px;
   overflow: hidden;
+  min-width: 380px;
+}
+.categories {
+  width: 100%;
+  overflow-x: auto;
 }
 .invoice {
-  width: 380px;
   height: 85svh;
   margin-left: 20px;
   background-color: white;

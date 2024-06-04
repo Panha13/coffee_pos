@@ -1,5 +1,5 @@
-<div nz-row>
-    <div nz-col nzFlex="5">
+<div nz-row nz-flex [nzWrap]="'nowrap'">
+    <div nz-col nzFlex="5" style="min-width: 570px;">
         <div nz-flex nzAlign="center" nzJustify="start">
             <h1 class="logo">Coffee</h1>
             <div class="input-container">
@@ -25,7 +25,7 @@
                     <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </div>
-                <p>
+                <p style="display: flex; flex-wrap: nowrap;">
                     Cashier <mat-icon style="vertical-align: middle; ">keyboard_arrow_down</mat-icon>
                 </p>
             </div>

@@ -1,4 +1,4 @@
-<div nz-row>
+<div nz-row nz-flex [nzWrap]="'nowrap'">
     <div nz-col nzFlex="65px" class="aside">
         <app-sidebar></app-sidebar>
     </div>
@@ -7,17 +7,18 @@
             <div nz-row class="navbar" style="margin-bottom: 15px;">
                 <app-navbar style="width: 100%;"></app-navbar>
             </div>
-            <div nz-row nzJustify="space-between">
-                <div nz-col nzFlex="5">
+            <div nz-row nz-flex [nzWrap]="'nowrap'" nzJustify="space-between">
+                <div nz-col nzFlex="5" style=" min-width: 540px;">
                     <div nz-row class="categories">
                         <app-categories></app-categories>
                     </div>
-                    <div nz-row [nzGutter]="[10,20]" class="product-list">
-                        <app-product-card nz-col nzLg="8" nzXl="6" *ngFor="let card of productCards"></app-product-card>
+                    <div nz-row [nzGutter]="[15,15]" class="product-list">
+                        <app-product-card nz-col nzMd="12" nzXl="8" nzXXl="6"
+                            *ngFor="let card of productCards"></app-product-card>
                     </div>
                 </div>
                 <div nz-col class="invoice">
-                    order
+                    <app-invoice></app-invoice>
                 </div>
             </div>
         </div>
