@@ -24,6 +24,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { OrderCardComponent } from './order-card/order-card.component';
+import { HomeComponent } from './home/home.component';
 
 registerLocaleData(en);
 
@@ -36,6 +37,7 @@ registerLocaleData(en);
     ProductCardComponent,
     InvoiceComponent,
     OrderCardComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
